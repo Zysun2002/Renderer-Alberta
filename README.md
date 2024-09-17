@@ -5,4 +5,4 @@ This project is part of a 3-month research internship program in the University 
 A presentation in the poster fair organized by UofA.
 
 ![weareworldshapers](https://github.com/user-attachments/assets/39145eb4-3d7e-4bbd-b364-68452094053f)
-The slogen that inspired me most.
+The sentence that inspired me most.
