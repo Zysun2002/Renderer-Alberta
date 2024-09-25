@@ -5,7 +5,7 @@ import ipdb
 
 class Model():
     def __init__(self, obj_path):
-        mesh = trimesh.load(obj_path)
+        mesh = trimesh.load(obj_path, force='scene')
         self.verts = mesh.vertices
         self.faces = mesh.faces
         self.v_normals = mesh.vertex_normals

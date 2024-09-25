@@ -44,7 +44,7 @@ def main():
     height, width = 200, 200
     image = Image.new("RGB", (width, height), black)
 
-    obj_path = "/root/autodl-tmp/tiny-renderer/assets/african_head.obj"
+    obj_path = "/root/autodl-tmp/tiny-renderer/assets/Cone.obj"
     model = Model(obj_path)
 
     light_dir = np.array((0, 0, -1))
@@ -74,7 +74,7 @@ def main():
 
     
     image = image.transpose(Image.FLIP_TOP_BOTTOM)
-    image.save("output3.png")
+    image.save("spongebob.png")
 
 if __name__ == '__main__':
     main()

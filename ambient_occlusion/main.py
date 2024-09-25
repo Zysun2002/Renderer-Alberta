@@ -244,7 +244,7 @@ def main():
 
         # render occl
         occl = Image.new("L", (1024, 1024), 0)
-
+    
         z_buffer = np.full((width, height), -np.inf)
         shader = Shader(model, light_dir, viewport, projection, model_view, shadow_buffer, occl)
         for face in model.faces:
