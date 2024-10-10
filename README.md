@@ -15,11 +15,17 @@ Though implemented using python, the renderer does not rely on high-level graphi
 
 ## Selected Features：
 
-### Shadow mapping technique:
+### ambient and specular light
+I really love the ambient and specular light which make the material look like more real. By calculating the angle between the reflection and the eye direction, the specular highlight is rendered.
+
+you can render your 3D assets using these 
+```
+cd mtl_parse
+python main.py --ratio_Ka YOUR_RATIO_KA --ratio_KD YOUR_RATIO_KD --ratio_Ks YOUR_RATIO_KS
+```
+
+### Shadow mapping technique
 An easy way to make rendering more photo-realistic is to calculate more accurate shadow. By a two-pass rendering process, we could bake the shadow information in a shadow mapping previously before real rendering.
-
-
-
 
 
 
