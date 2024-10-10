@@ -17,7 +17,7 @@ Though implemented using python, the renderer does not rely on high-level graphi
 
 ## Selected Features：
 
-### ambient and specular light
+### Ambient and specular light
 I really love how ambient and specular lighting make materials look more realistic. By calculating the angle between the reflection and the viewer's direction, we can create the specular highlight.
 
 You can adjust the intensity ratio of the three lights by setting the following parameters:
@@ -38,7 +38,6 @@ python main.py
 3D assets are everywhere online, but when I tried out Dmitry V. Sokolov's renderer, I had some trouble rendering a lot of the common formats available in online libraries. To fix this, I updated my renderer to support the OBJ + MTL format, which is super common on the Internet. This enhancement lets the renderer handle most of the 3D assets you can find online.
 
 ### Appendix
- The project is still ongoing.
 
 
 ![poster pre](https://github.com/user-attachments/assets/ff284f99-b100-4782-b07e-e0cec28ad572)
