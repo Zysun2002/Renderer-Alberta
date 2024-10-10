@@ -37,12 +37,13 @@ python main.py
 ### Handle MTL format
 3D assets are everywhere online, but when I tried out Dmitry V. Sokolov's renderer, I had some trouble rendering a lot of the common formats available in online libraries. To fix this, I updated my renderer to support the OBJ + MTL format, which is super common on the Internet. This enhancement lets the renderer handle most of the 3D assets you can find online.
 
-### Appendix
+## Appendix
 
 
 <img src="https://github.com/user-attachments/assets/ff284f99-b100-4782-b07e-e0cec28ad572" alt="poster fair" width="500"/>
 
 A presentation in the poster fair organized by UofA. **You can review my poster [here](https://github.com/Zysun2002/Renderer-Alberta/blob/main/poster_ZiyuSun.pdf).**
 
-![weareworldshapers](https://github.com/user-attachments/assets/39145eb4-3d7e-4bbd-b364-68452094053f)
+<img src="https://github.com/user-attachments/assets/39145eb4-3d7e-4bbd-b364-68452094053f" width="500"/>
+
 The sentence that inspired me most.
