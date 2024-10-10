@@ -37,6 +37,9 @@ python main.py
 ### Handle MTL format
 3D assets are everywhere online, but when I tried out Dmitry V. Sokolov's renderer, I had some trouble rendering a lot of the common formats available in online libraries. To fix this, I updated my renderer to support the OBJ + MTL format, which is super common on the Internet. This enhancement lets the renderer handle most of the 3D assets you can find online.
 
+### Real-time visualization
+
+
 ## Appendix
 
 
