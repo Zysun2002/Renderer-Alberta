@@ -43,7 +43,7 @@ python main.py
 
 ### Real-time visualization
 
-
+Even using Python, building a renderer still feels harder than writing simpler code. I always try to make it easier and more intuitive to code and debug. That’s why I visualize the rendering process in real-time—it helps me understand the rendering sequence better.
 
 https://github.com/user-attachments/assets/d0c37677-48c0-4755-b2eb-ba276282b8c5
 
