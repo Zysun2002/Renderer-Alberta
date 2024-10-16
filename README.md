@@ -15,6 +15,8 @@ Along with all the features from his tutorial, this version has made some advanc
 
 Though implemented using python, the renderer does not rely on high-level graphics library during rendering process. I gain fundamental knowledge about rendering and computer graphics during building my renderer step by step.
 
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/Pipeline.png" alt="pipeline" width="800"/>
+
 ## Selected Features
 
 ### Ambient and specular light
