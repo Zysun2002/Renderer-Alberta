@@ -56,6 +56,10 @@ Even using Python, building a renderer still feels harder than writing simpler c
 ![](https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/resized.gif)
 ![](https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/resized.gif)
 
+## Todo 
+
+Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
+
 
 ## Appendix
 
