@@ -41,6 +41,12 @@ python main.py
 ### Handle MTL format
 3D assets are everywhere online, but when I tried out Dmitry V. Sokolov's renderer, I had some trouble rendering a lot of the common formats available in online libraries. To fix this, I updated my renderer to support the OBJ + MTL format, which is super common on the Internet. This enhancement lets the renderer handle most of the 3D assets you can find online.
 
+You only have to assign the mtl file path to allow OBJ + MTL rendering
+```
+mtl_path = PATH_TO_YOUR_MTL_FILE
+model.load_mtl(mtl_path)
+```
+
 ### Real-time visualization
 
 Even using Python, building a renderer still feels harder than writing simpler code. I always try to make it easier and more intuitive to code and debug. That’s why I visualize the rendering process in real-time—it helps me understand the rendering sequence better.
