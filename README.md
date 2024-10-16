@@ -59,7 +59,7 @@ Even using Python, building a renderer still feels harder than writing simpler c
 
 ## Appendix
 
-This is my second visit to the University of Alberta. I really my time here!
+This is my second visit to the University of Alberta. I really enjoy my time here!
 
 <img src="https://github.com/user-attachments/assets/ff284f99-b100-4782-b07e-e0cec28ad572" alt="poster fair" width="400" height="300"/>
 <img src="https://github.com/user-attachments/assets/39145eb4-3d7e-4bbd-b364-68452094053f" width="400" height="300"/>
