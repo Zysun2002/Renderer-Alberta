@@ -58,7 +58,9 @@ Even using Python, building a renderer still feels harder than writing simpler c
 
 ## Todo 
 
-Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
+1. Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
+
+2. While working with MTL file, I found there could be over 10 rendering options which consider more aspects and are thus more complex. To achieve more photo-realistic results, to implement these features is always meaningful and more importantly, interesting!
 
 
 ## Appendix
