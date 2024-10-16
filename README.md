@@ -17,6 +17,9 @@ Though implemented using python, the renderer does not rely on high-level graphi
 
 <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/Pipeline.png" alt="pipeline" width="800" height="400"/>
 
+### Instruction guide
+
+
 ## Selected Features
 
 ### Ambient and specular light
