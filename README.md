@@ -25,13 +25,13 @@ You can adjust the intensity ratio of the three lights by setting the following 
 cd mtl_parse
 python main.py --ratio_Ka YOUR_RATIO_KA --ratio_KD YOUR_RATIO_KD --ratio_Ks YOUR_RATIO_KS
 ```
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/specular_light.png" alt="ablation" width="500"/>
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/specular_light.png" alt="ablation" width="800"/>
 
 
 ### Shadow mapping technique
 A great way to boost the photo-realism of rendering is by getting more accurate shadows. By using a two-pass rendering process, we can pre-bake shadow information with shadow mapping before the actual rendering happens.
 
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/shadow_mapping.png" alt="ablation" width="500"/>
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/shadow_mapping.png" alt="ablation" width="800"/>
 
 If you want to use shadow mapping, run the following commands:
 ```
