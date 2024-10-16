@@ -59,6 +59,15 @@ Even using Python, building a renderer still feels harder than writing simpler c
 ![](https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif)
 ![](https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif)
 
+To get the above results, simply use:
+```
+python -m ipdb render_texture.py --obj_path ../assets/pumpkin/pumpkin_.obj --mtl_path ../assets/pumpkin/pumpkin_.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198.3 --up_direction 1 -1 -1 --light_direction -2 2 1 --width 800 --height 800
+```
+and
+```
+python -m ipdb render_texture.py --obj_path ../assets/tanks/OBJ_7050.obj --mtl_path ../assets/tanks/OBJ_7050.mtl --camera_position -3 4 30 --lookat 1 1 25 --up_direction 0 1 0 --light_direction 1 -1 1 --width 800 --height 800
+```
+
 ## Todo 
 
 1. Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
