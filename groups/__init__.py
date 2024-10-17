@@ -5,7 +5,7 @@ import ipdb
 
 class Model():
     def __init__(self, obj_path):
-        mesh = trimesh.load(obj_path, force='scene')
+        mesh = trimesh.load(obj_path)
         self.verts = mesh.vertices
         self.faces = mesh.faces
         self.v_normals = mesh.vertex_normals
@@ -22,8 +22,7 @@ class Model():
         # ipdb.set_trace()
         self.normal_mapping = normal_mapping.transpose(Image.FLIP_TOP_BOTTOM)
         # self.uv_map.save("texture.png") 
-        # 
-
+    
     def load_specular_mapping(self, tga_path):
         specular_mapping = Image.open(tga_path)
         self.specular_mapping = specular_mapping.transpose(Image.FLIP_TOP_BOTTOM)       

@@ -94,10 +94,9 @@ class Gouraud_Shader():
 
 
         normal = norm((np.linalg.inv(self.projection @ self.model_view).T @ \
-            embed_vert(self.model.retrieve_normal(uv[0], uv[1])))[:3])
-
-        # ipdb.set_trace()  
-        light = norm((self.projection @ self.model_view @ embed_vert(self.light_dir))[:3])
+            embed_vec(self.model.retrieve_normal(uv[0], uv[1])))[:3])
+ 
+        light = norm((self.projection @ self.model_view @ embed_vec(self.light_dir))[:3])
         
         reflect = norm(2 * np.dot(light, normal) * normal - light)
         spec = pow(max(reflect[2], 0.), self.model.retrieve_specular(uv[0], uv[1]))
@@ -156,7 +155,7 @@ def main():
         triangle(screen_coords, shader, image, z_buffer, depth)
 
     image = image.transpose(Image.FLIP_TOP_BOTTOM)
-    image.save("output3.1.png")
+    image.save("output3.1_.png")
 
 
 if __name__ == '__main__':

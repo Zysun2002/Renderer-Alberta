@@ -160,7 +160,7 @@ def main():
     model = Model(obj_path)
     texture_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_diffuse.tga"
     model.load_texture(texture_path)
-    normal_path = '/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_nm.tga'
+    normal_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_nm.tga"
     model.load_normal_mapping(normal_path)
     specular_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_spec.tga"
     model.load_specular_mapping(specular_path)
@@ -190,7 +190,7 @@ def main():
             screen_coords[i] = shader.vertex(face, i)
         triangle(screen_coords, shader, image, z_buffer, depth)
     image = image.transpose(Image.FLIP_TOP_BOTTOM)
-    image.save("output1.1.png")
+    image.save("shadow_mapping_results.png")
 
 if __name__ == '__main__':
     main()

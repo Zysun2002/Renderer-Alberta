@@ -68,6 +68,8 @@ def triangle(projected_verts, viewport, shader, image, z_buffer, depth):
             bc_clip = np.array([bc_screen[i] / verts[i, 3] for i in range(3)])
             bc_clip = bc_clip / (bc_clip[0]+bc_clip[1]+bc_clip[2])
             frag_depth = np.dot(projected_verts[:, 2], bc_clip)
+            # to get the depth of current position
+            # this is not necessary in traditional pipeline
             
             if (z_buffer[x, y] <= frag_depth):
                 z_buffer[x, y] = frag_depth
@@ -210,13 +212,13 @@ def main():
 
     image = Image.new("RGB", (width, height), black)
 
-    obj_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose.obj"
+    obj_path = "/root/autodl-tmp/tiny-renderer/assets/african_head/african_head.obj"
     model = Model(obj_path)
-    texture_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_diffuse.tga"
+    texture_path = "/root/autodl-tmp/tiny-renderer/assets/african_head_diffuse.tga"
     model.load_texture(texture_path)
-    normal_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_nm.tga"
+    normal_path = "/root/autodl-tmp/tiny-renderer/assets/african_head/african_head_nm.tga"
     model.load_normal_mapping(normal_path)
-    specular_path = "/root/autodl-tmp/tiny-renderer/assets/obj_II/diablo3_pose_spec.tga"
+    specular_path = "/root/autodl-tmp/tiny-renderer/assets/african_head/african_head_spec.tga"
     model.load_specular_mapping(specular_path)
     total = Image.new("L", (1024, 1024), 0)
     
@@ -260,9 +262,9 @@ def main():
                 total.putpixel((i, j), color)
 
     total = total.transpose(Image.FLIP_TOP_BOTTOM)
-    total.save("occlusion.png")
+    total.save("occlusion_head.png")
     occl = occl.transpose(Image.FLIP_TOP_BOTTOM)
-    occl.save("occl.png")
+    occl.save("occl_head.png")
 
 
 if __name__ == '__main__':
