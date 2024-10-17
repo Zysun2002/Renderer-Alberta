@@ -40,9 +40,13 @@ cd integration
 python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAMERA_COORDINATES --lookat CENTER_COORDINATES --up_direction UP_DIRECTION --light_direction LIGHT_DIRECTION
 ```
 
-| parameter | explanation |  |
+| parameter | explanation | if required |
 |:-------------|:--------------:|--------------:|
 | --obj_path     | path to the .obj file | required   |
+| --mtl_path     | path to the .mtl file  | required  |
+| --output_path     | path to the rendering (one image only)  | optional  |
+| --obj_path     | path to the .obj file | required   |
+| --mtl_path     | path to the .mtl file  | required  |
 | --mtl_path     | path to the .mtl file  | required  |
 
 
@@ -92,14 +96,23 @@ pumpkin          |  tanks      | pikachu | pan
 
 
 
-To get the above results, simply use:
+To get the above results, the corresponding commands are:
 ```
-python -m ipdb render_texture.py --obj_path ../assets/pumpkin/pumpkin_.obj --mtl_path ../assets/pumpkin/pumpkin_.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198.3 --up_direction 1 -1 -1 --light_direction -2 2 1 --width 800 --height 800
+python  render.py --obj_path ../assets/pumpkin/pumpkin.obj --mtl_path ../assets/pumpkin/pumpkin.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198 --up_direction 0 -1 -1 --light_direction -1 -1 1 --width 800 --height 800 --allow_vis --vis_path pumpkin
 ```
-and
 ```
-python -m ipdb render_texture.py --obj_path ../assets/tanks/OBJ_7050.obj --mtl_path ../assets/tanks/OBJ_7050.mtl --camera_position -3 4 30 --lookat 1 1 25 --up_direction 0 1 0 --light_direction 1 -1 1 --width 800 --height 800
+python render.py --obj_path ../ass
+ets/tanks/tanks.obj --mtl_path ../assets/tanks/tanks.mtl --camera_position -3 4 30 --lookat 1 1 25 --up_direction 0 1 0 --light_di
+rection 3 -4 -30 --width 800 --height 800 --allow_vis --vis_path tanks
 ```
+```
+python render.py --obj_path ../assets/pikachu/pikachu.obj --mtl_path ../assets/pikachu/pikachu.mtl --camera_position -0.3 0.5 0.6 --lookat 0 0.5 -0.4 --up_direction 0 1 0  --light_direction  0.1 -0.4 -0.5 --width 800 --height 800 --allow_vis --vis_path pikachu
+```
+and 
+```
+python render.py  --obj_path ../assets/pan/pan.obj --mtl_path ../assets/pan/pan.mtl --camera_position 0 0 -60 --lookat -1.2 0 -58.5 --up_direction 0 1 -1 --light_direction 0 1 1 -width 800 --height 800 --allow_vis --vis_path pan
+```
+
 
 ## Todo 
 
