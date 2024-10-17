@@ -18,8 +18,11 @@ Though implemented using python, the renderer does not rely on high-level graphi
 <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/Pipeline.png" alt="pipeline" width="800" height="400"/>
 
 ## Instruction guide
-Thanks to Python's straightforward packaging, using the renderer is easy and efficient.
+
+1. clone the repo and build the environment. Thanks to Python's straightforward packaging, using the renderer is easy and efficient.
 ```
+git clone https://github.com/Zysun2002/Renderer-Alberta.git
+cd Renderer-Alberta
 pip install -r requirements.txt
 ```
 
