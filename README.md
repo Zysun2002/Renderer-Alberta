@@ -58,12 +58,9 @@ python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAME
 | --vis_iter     | frequenct of real-time visualization | optional, default 100  |
 | --vis_path     | path to save real-time visualization results | optional, default "output"  |
 
+Some examples can be found in Real-time visualization section.
 
-
-
-
-   
-
+You can also test the simplified version on [MecSimCalc](https://mecsimcalc.com/app/4328169). However, due to uploaded file size limitations, only basic rendering is possible.
 
 ## Selected Features
 
