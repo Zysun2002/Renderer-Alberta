@@ -27,12 +27,24 @@ pip install -r requirements.txt
 ```
 
 2. download the 3D assets from [google drive](https://drive.google.com/drive/folders/16McfVknOWoH1g2q_mMy05sRhQjE2ylHD?usp=drive_link) or prepare your own data.
+```
+mkdir assets/
+```
+put 3D assets in this folder.
+
 3. change the path to texture mapping in MTL if applicable.
+   
 4. assign rendering parameter and run the rendering program.
 ```
 cd integration
 python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAMERA_COORDINATES --lookat CENTER_COORDINATES --up_direction UP_DIRECTION --light_direction LIGHT_DIRECTION
 ```
+
+| parameter | explanation |  |
+|:-------------|:--------------:|--------------:|
+| --obj_path     | path to the .obj file | required   |
+| --mtl_path     | path to the .mtl file  | required  |
+
 
    
 
