@@ -56,7 +56,7 @@ python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAME
 | --Cs     | intensity of specular light | optional, default 0.8  |
 | --allow_vis     | to allow real-time rendering visualization | optional, default False |
 | --vis_iter     | frequenct of real-time visualization | optional, default 100  |
-| --vis_path     | path to save real-time visualization results | optional, default output/  |
+| --vis_path     | path to save real-time visualization results | optional, default "output"  |
 
 
 
