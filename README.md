@@ -56,13 +56,11 @@ model.load_mtl(mtl_path)
 
 Even using Python, building a renderer still feels harder than writing simpler code. I always try to make it easier and more intuitive to code and debug. That’s why I visualize the rendering process in real-time—it helps me understand the rendering sequence better.
 
-pumpkin          |  tanks
-:-------------------------:|:-------------------------:
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |  <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif" width="300">
+pumpkin          |  tanks      | pikachu
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |  <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pikachu.gif" width="300">
 
 
-
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pikachu.gif" width="300">
 
 To get the above results, simply use:
 ```
