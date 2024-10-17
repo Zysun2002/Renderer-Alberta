@@ -70,9 +70,11 @@ python -m ipdb render_texture.py --obj_path ../assets/tanks/OBJ_7050.obj --mtl_p
 
 ## Todo 
 
-1. Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
+1. Some features have not been integrated into the mainstream program.
+ 
+2. Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
 
-2. While working with MTL file, I found there could be over 10 rendering options which consider more aspects and are thus more complex. To achieve more photo-realistic results, to implement these features is always meaningful and more importantly, interesting!
+3. While working with MTL file, I found there could be over 10 rendering options which consider more aspects and are thus more complex. To achieve more photo-realistic results, to implement these features is always meaningful and more importantly, interesting!
 
 
 ## Appendix
