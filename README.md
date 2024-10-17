@@ -56,6 +56,8 @@ model.load_mtl(mtl_path)
 
 Even using Python, building a renderer still feels harder than writing simpler code. I always try to make it easier and more intuitive to code and debug. That’s why I visualize the rendering process in real-time—it helps me understand the rendering sequence better.
 
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="48">
+
 ![](https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif)
 ![](https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif)
 
@@ -70,7 +72,7 @@ python -m ipdb render_texture.py --obj_path ../assets/tanks/OBJ_7050.obj --mtl_p
 
 ## Todo 
 
-1. Some features have not been integrated into the mainstream program.
+1. Some additional features have not been integrated into the mainstream program.
  
 2. Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
 
