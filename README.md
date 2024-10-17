@@ -48,15 +48,15 @@ python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAME
 | --camera_position  | coordinates of the camera | required   |
 | --lookat     | coordinates of the screen center  | required  |
 | --up_direction     | up direction of the camera | required  |
-| --width     | up direction of the camera | required  |
-| --height     | up direction of the camera | required  |
-| --background     | up direction of the camera | required  |
-| --Ca     | up direction of the camera | required  |
-| --Cd     | up direction of the camera | required  |
-| --Cs     | up direction of the camera | required  |
-| --allow_vis     | up direction of the camera | required  |
-| --vis_iter     | up direction of the camera | required  |
-| --allow_vis     | up direction of the camera | required  |
+| --width     | width of the canvas | optional, default 800  |
+| --height     | height of the canvas | optional, default 800  |
+| --background     | background color (rgb) | optional, default(0, 0, 0)  |
+| --Ca     | intensity of ambient light | optional, default 0.2  |
+| --Cd     | intensity of diffuse light | optional, default 0.9  |
+| --Cs     | intensity of specular light | optional, default 0.8  |
+| --allow_vis     | to allow real-time rendering visualization | optional, default False |
+| --vis_iter     | frequenct of real-time visualization | optional, default 100  |
+| --vis_path     | path to save real-time visualization results | optional, default output/  |
 
 
 
