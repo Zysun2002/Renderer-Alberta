@@ -45,9 +45,21 @@ python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAME
 | --obj_path     | path to the .obj file | required   |
 | --mtl_path     | path to the .mtl file  | required  |
 | --output_path     | path to the rendering (one image only)  | optional  |
-| --obj_path     | path to the .obj file | required   |
-| --mtl_path     | path to the .mtl file  | required  |
-| --mtl_path     | path to the .mtl file  | required  |
+| --camera_position  | coordinates of the camera | required   |
+| --lookat     | coordinates of the screen center  | required  |
+| --up_direction     | up direction of the camera | required  |
+| --width     | up direction of the camera | required  |
+| --height     | up direction of the camera | required  |
+| --background     | up direction of the camera | required  |
+| --Ca     | up direction of the camera | required  |
+| --Cd     | up direction of the camera | required  |
+| --Cs     | up direction of the camera | required  |
+| --allow_vis     | up direction of the camera | required  |
+| --vis_iter     | up direction of the camera | required  |
+| --allow_vis     | up direction of the camera | required  |
+
+
+
 
 
    
