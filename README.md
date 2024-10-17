@@ -64,8 +64,7 @@ Even using Python, building a renderer still feels harder than writing simpler c
 pumpkin          |  tanks      | pikachu | pan
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |  <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pikachu.gif" width="300"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pan.gif" width="300">
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-python -m ipdb render_texture.py --obj_path ../assets/pumpkin/pumpkin_.obj --mtl_path ../assets/pumpkin/pumpkin_.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198.3 --up_direction 1 -1 -1 --light_direction -2 2 1 --width 800 --height 800 | python -m ipdb render_texture.py --obj_path ../assets/pumpkin/pumpkin_.obj --mtl_path ../assets/pumpkin/pumpkin_.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198.3 --up_direction 1 -1 -1 --light_direction -2 2 1 --width 800 --height 800| python -m ipdb render_texture.py --obj_path ../assets/pumpkin/pumpkin_.obj --mtl_path ../assets/pumpkin/pumpkin_.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198.3 --up_direction 1 -1 -1 --light_direction -2 2 1 --width 800 --height 800| python -m ipdb render_texture.py --obj_path ../assets/pumpkin/pumpkin_.obj --mtl_path ../assets/pumpkin/pumpkin_.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198.3 --up_direction 1 -1 -1 --light_direction -2 2 1 --width 800 --height 800
+
 
 
 
