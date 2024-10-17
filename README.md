@@ -23,6 +23,9 @@ Thanks to Python's straightforward packaging, using the renderer is easy and eff
 pip install -r requirements.txt
 ```
 
+2. download the 3D assets from [google drive](https://drive.google.com/drive/folders/16McfVknOWoH1g2q_mMy05sRhQjE2ylHD?usp=drive_link) or prepare your own data.
+3. 
+   
 
 
 ## Selected Features
