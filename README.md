@@ -101,8 +101,7 @@ To get the above results, the corresponding commands are:
 python  render.py --obj_path ../assets/pumpkin/pumpkin.obj --mtl_path ../assets/pumpkin/pumpkin.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198 --up_direction 0 -1 -1 --light_direction -1 -1 1 --width 800 --height 800 --allow_vis --vis_path pumpkin
 ```
 ```
-python render.py --obj_path ../ass
-ets/tanks/tanks.obj --mtl_path ../assets/tanks/tanks.mtl --camera_position -3 4 30 --lookat 1 1 25 --up_direction 0 1 0 --light_di
+python render.py --obj_path ../assets/tanks/tanks.obj --mtl_path ../assets/tanks/tanks.mtl --camera_position -3 4 30 --lookat 1 1 25 --up_direction 0 1 0 --light_di
 rection 3 -4 -30 --width 800 --height 800 --allow_vis --vis_path tanks
 ```
 ```
