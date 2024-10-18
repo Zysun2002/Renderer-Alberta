@@ -30,9 +30,9 @@ pip install -r requirements.txt
 ```
 mkdir assets/
 ```
-put 3D assets in this folder.
+and put 3D assets in this folder.
 
-3. change the path to texture mapping in MTL if applicable.
+3. change the path to texture mapping in MTL file if applicable.
    
 4. assign rendering parameter and run the rendering program.
 ```
