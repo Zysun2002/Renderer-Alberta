@@ -114,8 +114,7 @@ python render.py  --obj_path ../assets/pan/pan.obj --mtl_path ../assets/pan/pan.
 ```
 and 
 ```
-python render.py --obj_path ../assets/fish/fish.obj --mtl_path ../assets/fish/fish.mtl --camera_position 0 -3 20 --lookat 0 -2  18.5 --up_direction 0 1 0 --light_di
-rection 1 1 1 --allow_vis --vis_path fish
+python render.py --obj_path ../assets/fish/fish.obj --mtl_path ../assets/fish/fish.mtl --camera_position 0 0 20 --lookat 0 1.5  19 --up_direction 0 1 0 --light_direction 1 1 1 --allow_vis --vis_path fish
 ```
 
 
