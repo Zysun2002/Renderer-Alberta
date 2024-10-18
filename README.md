@@ -94,7 +94,7 @@ Even using Python, building a renderer still feels harder than writing simpler c
 
 pumpkin     | pan     |  tanks      | pikachu 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pan.gif" width="300">|  <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pikachu.gif" width="300"> 
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pan.gif" width="300">|  <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pikachu.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/fish.gif" width="300">
 
 
 
@@ -109,9 +109,13 @@ rection 3 -4 -30 --width 800 --height 800 --allow_vis --vis_path tanks
 ```
 python render.py --obj_path ../assets/pikachu/pikachu.obj --mtl_path ../assets/pikachu/pikachu.mtl --camera_position -0.3 0.5 0.6 --lookat 0 0.5 -0.4 --up_direction 0 1 0  --light_direction  0.1 -0.4 -0.5 --width 800 --height 800 --allow_vis --vis_path pikachu
 ```
-and 
 ```
 python render.py  --obj_path ../assets/pan/pan.obj --mtl_path ../assets/pan/pan.mtl --camera_position 0 0 -60 --lookat -1.2 0 -58.5 --up_direction 0 1 -1 --light_direction 0 1 1 -width 800 --height 800 --allow_vis --vis_path pan
+```
+and 
+```
+python render.py --obj_path ../assets/fish/fish.obj --mtl_path ../assets/fish/fish.mtl --camera_position 0 -3 20 --lookat 0 -2  18.5 --up_direction 0 1 0 --light_di
+rection 1 1 1 --allow_vis --vis_path fish
 ```
 
 
