@@ -12,6 +12,7 @@ Along with all the features from his tutorial, this version has made some advanc
 1. Implemented in Python: I chose Python for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python since I'm more familiar with it.
 2. Multiple Object Support: This renderer can now handle scenes with multiple objects.
 3. Support for OBJ and MTL Formats: I've added support for OBJ and MTL file formats since these are widely available online, allowing the renderer to work with more 3D assets."
+4. Another pipeline based on ray-tracing is also supported now.
 
 Though implemented using python, the renderer does not rely on high-level graphics library during rendering process. I gain fundamental knowledge about rendering and computer graphics during building my renderer step by step.
 
@@ -96,8 +97,6 @@ pumpkin     | pan     |  tanks      | pikachu | fish
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pan.gif" width="300">|  <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/tanks.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pikachu.gif" width="300"> | <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/fish.gif" width="300">
 
-
-
 To get the above results, the corresponding commands are:
 ```
 python  render.py --obj_path ../assets/pumpkin/pumpkin.obj --mtl_path ../assets/pumpkin/pumpkin.mtl --camera_position 0 -65 -200 --lookat 0 -67 -198 --up_direction 0 -1 -1 --light_direction -1 -1 1 --width 800 --height 800 --allow_vis --vis_path pumpkin
@@ -116,6 +115,9 @@ and
 ```
 python render.py --obj_path ../assets/fish/fish.obj --mtl_path ../assets/fish/fish.mtl --camera_position 0 0 20 --lookat 0 1.5  19 --up_direction 0 1 0 --light_direction 1 1 1 --allow_vis --vis_path fish
 ```
+### New: Basic Ray tracing pipeline
+
+I am also building a new pipleline based on ray-tracing. This is a python adaptive version of [here](https://raytracing.github.io/).
 
 
 ## Todo 
