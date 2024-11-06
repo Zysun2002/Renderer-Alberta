@@ -67,6 +67,11 @@ You can also test the simplified version on [MecSimCalc](https://mecsimcalc.com/
 
 ### Ray tracing
 
+The ray tracing pipeline is still under renconstruction. However, you can still try the current version.
+```
+python ray_tracing.py
+```
+
 
 ## Selected Features
 
@@ -130,7 +135,7 @@ focus     | defocus
 
 ## Todo 
 
-1. Some additional features have not been integrated into the mainstream program.
+1. Some additional features have not been integrated into the mainstream program, including some optimization for rasterization and the ray tracing function.
  
 2. Python makes non-graphics tasks easier—like handling command interfaces and using simple data structures. However, the core functions should still run like C for better speed. My solution is to write the core rendering part in CUDA for speed, while using Python to manage the peripheral parts.
 
