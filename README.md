@@ -6,13 +6,7 @@ This project is part of my 3-month research internship program in the University
 
 This renderer is for learning purpose. You can use this project to learn how to build a Python renderer from scratch.
 
-The renderer is a expension of seceral fantastic tutorials ([rasterization](https://github.com/ssloy/tinyrenderer), [ray tracing](https://raytracing.github.io/)) on computer graphics and rendering. Besides including all the features introduced in his tutorial, the **advance** made in this version is:
-Along with all the features from his tutorial, this version has made some advancements:
-
-1. Implemented in Python: I chose Python for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python since I'm more familiar with it.
-2. Multiple Object Support: This renderer can now handle scenes with multiple objects.
-3. Support for OBJ and MTL Formats: I've added support for OBJ and MTL file formats since these are widely available online, allowing the renderer to work with more 3D assets."
-4. Another pipeline based on ray-tracing is also supported now.
+The renderer is an expension of several fantastic tutorials on [rasterization](https://github.com/ssloy/tinyrenderer) and [ray tracing](https://raytracing.github.io/).I chose Python for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python. This renderer can also support multiple objects, MTL format and some othter features not included in the above-mentioned tutorials. 
 
 Though implemented using python, the renderer does not rely on high-level graphics library during rendering process. I gain fundamental knowledge about rendering and computer graphics during building my renderer step by step.
 
@@ -35,7 +29,7 @@ and put 3D assets in this folder.
 
 3. change the path to texture mapping in MTL file if applicable.
    
-4. assign rendering parameter and run the rendering program.
+4. assign rendering parameter and do the rasterization.
 ```
 cd integration
 python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAMERA_COORDINATES --lookat CENTER_COORDINATES --up_direction UP_DIRECTION --light_direction LIGHT_DIRECTION
