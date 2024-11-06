@@ -6,7 +6,7 @@ This project is part of my 3-month research internship program in the University
 
 This renderer is for learning purpose. You can use this project to learn how to build a Python renderer from scratch.
 
-The renderer is a expension of [Dmitry V. Sokolov](https://github.com/ssloy/tinyrenderer)'s tutorial on computer graphics and rendering. Besides including all the features introduced in his tutorial, the **advance** made in this version is:
+The renderer is a expension of seceral fantastic tutorials ([rasterization](https://github.com/ssloy/tinyrenderer), [ray tracing](https://raytracing.github.io/)) on computer graphics and rendering. Besides including all the features introduced in his tutorial, the **advance** made in this version is:
 Along with all the features from his tutorial, this version has made some advancements:
 
 1. Implemented in Python: I chose Python for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python since I'm more familiar with it.
