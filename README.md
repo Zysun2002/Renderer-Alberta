@@ -120,11 +120,12 @@ and
 ```
 python render.py --obj_path ../assets/fish/fish.obj --mtl_path ../assets/fish/fish.mtl --camera_position 0 0 20 --lookat 0 1.5  19 --up_direction 0 1 0 --light_direction 1 1 1 --allow_vis --vis_path fish
 ```
-### New: Basic Ray tracing pipeline
-
+### Ray tracing pipeline
 I am currently adding a pipeline based on ray tracing. Here are the results.
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/shadow_mapping.png" alt="ablation" width="400"/>
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/shadow_mapping.png" alt="ablation" width="400"/>
+pumpkin     | pan    
+:-------------------------:|:-------------------------:
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pumpkin.gif" width="300"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/pan.gif" width="300">a/blob/main/demo_assets/fish.gif" width="300">
+
 
 
 ## Todo 
