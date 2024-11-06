@@ -4,8 +4,6 @@ This project is part of my 3-month research internship program in the University
 
 ## Introduction
 
-### Rasterization
-
 This renderer is for learning purpose. You can use this project to learn how to build a Python renderer from scratch.
 
 The renderer is an expension of several fantastic tutorials on [rasterization](https://github.com/ssloy/tinyrenderer) and [ray tracing](https://raytracing.github.io/).I chose Python for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python. This renderer can also support multiple objects, MTL format and some othter features not included in the above-mentioned tutorials. 
@@ -21,6 +19,8 @@ Ray tracing:
 <img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/ray_tracing.png" alt="pipeline" width="600" height="300"/>
 
 ## Instruction guide
+
+### Rasterization
 
 1. clone the repo and build the environment. Thanks to Python's straightforward packaging, using the renderer is easy and efficient.
 ```
@@ -64,6 +64,9 @@ python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAME
 Some examples can be found in Real-time visualization section.
 
 You can also test the simplified version on [MecSimCalc](https://mecsimcalc.com/app/4328169). However, due to uploaded file size limitations, only basic rendering is avalable.
+
+### Ray tracing
+
 
 ## Selected Features
 
