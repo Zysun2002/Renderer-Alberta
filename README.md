@@ -6,9 +6,11 @@ This project is part of my 3-month research internship program in the University
 
 This renderer is for learning purpose. You can use this project to learn how to build a Python renderer from scratch.
 
-The renderer is an expension of several fantastic tutorials on [rasterization](https://github.com/ssloy/tinyrenderer) and [ray tracing](https://raytracing.github.io/). I chose Python for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python. This renderer can also support multiple objects, MTL format and some othter features not included in the above-mentioned tutorials. 
+The core idea of this renderer is inspired by several fantastic tutorials on [rasterization](https://github.com/ssloy/tinyrenderer) and [ray tracing](https://raytracing.github.io/). I chose **Python** for this renderer because I plan to integrate it with other rendering techniques, like neural rendering, in the future. Plus, it's easier for me to work with non-graphics features in Python. This renderer can also support multiple objects, MTL format and some othter features not included in the above-mentioned tutorials. 
 
-Though implemented using python, the renderer does not rely on high-level graphics library during rendering process. I gain fundamental knowledge about rendering and computer graphics during building my renderer step by step.
+However, rendering speed is significantly constrained when using Python, which is critical for rendering performance evaluation. To address this limitation, I implemented parallel computation using CUDA for optimization. The core rendering function was rewritten in **CUDA**, while Python was retained as a wrapper for the CUDA function. This approach preserves Python's flexibility while leveraging CUDA's speed. After optimization, a performance improvement of over **100x** was achieved.
+
+Hoever, 
 
 Rasterization:
 
