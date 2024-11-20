@@ -10,7 +10,7 @@ The core idea of this renderer is inspired by several fantastic tutorials on [ra
 
 However, rendering speed is significantly constrained when using Python, which is critical for rendering performance evaluation. To address this limitation, I implemented parallel computation using CUDA for optimization. The core rendering function was rewritten in **CUDA**, while Python was retained as a wrapper for the CUDA function. This approach preserves Python's flexibility while leveraging CUDA's speed. After optimization, a performance improvement of over **100x** was achieved.
 
-Hoever, 
+Here are the brief pipelines for the two rendering techniques.
 
 Rasterization:
 
