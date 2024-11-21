@@ -28,6 +28,7 @@ Ray tracing:
 ```
 git clone https://github.com/Zysun2002/Renderer-Alberta.git
 cd Renderer-Alberta
+cd rasterization
 pip install -r requirements.txt
 ```
 
