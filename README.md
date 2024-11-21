@@ -132,9 +132,12 @@ python render.py --obj_path ../assets/fish/fish.obj --mtl_path ../assets/fish/fi
 ```
 ### Ray tracing pipeline
 I am currently adding a pipeline based on ray tracing. Here are the results.
-distant view  |close-up view(focus)     | close-up view(defocus)   
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/ray-tracing-demo.png" width="400">|<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/focus_near.png" width="400"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/defocus_near.png" width="400">
+
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/focus_near.png" width="1200" height="600"> 
+
+close-up view(focus)     | close-up view(defocus)   
+|:-------------------------:|:-------------------------:
+<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/focus_near.png" width="400"> |<img src="https://github.com/Zysun2002/Renderer-Alberta/blob/main/demo_assets/defocus_near.png" width="400">
 
 
 
