@@ -71,7 +71,9 @@ You can also test the simplified version on [MecSimCalc](https://mecsimcalc.com/
 
 The ray tracing pipeline is still under renconstruction. However, you can still try the current version.
 ```
-python ray_tracing.py
+cd ray-tracing-cuda
+source install.bash
+python main.py --lookfrom 13 2 3 --lookat 0 0 0 --up_direction 0 1 0 --samples_per_pixel 500 --max_depth 50 --width 1200 --height 600
 ```
 
 
