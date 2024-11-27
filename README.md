@@ -1,4 +1,4 @@
-# Cuda-accelerated Rasterization and Ray-tracing from scratch
+# CUDA-Accelerated Rasterization and Ray-Tracing from Scratch
 This project is part of my 3-month research internship program in the University of Alberta. 
 
 
