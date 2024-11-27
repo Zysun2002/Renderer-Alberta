@@ -1,4 +1,4 @@
-# Alberta-Renderer
+# Cuda-accelerated Rasterization and Ray-tracing from scratch
 This project is part of my 3-month research internship program in the University of Alberta. 
 
 
