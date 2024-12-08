@@ -21,12 +21,10 @@ namespace py = pybind11;
 
 #define checkCudaErrors(val) check_cuda( (val), #val, __FILE__, __LINE__ )
 
-
 void check_cuda(cudaError_t result, char const *const func, const char *const file, int const line) {
     if (result) {
         std::cerr << "CUDA error = " << static_cast<unsigned int>(result) << " at " <<
             file << ":" << line << " '" << func << "' \n";
-        // Make sure we call CUDA Device Reset before exiting
         cudaDeviceReset();
         exit(99);
     }
@@ -73,8 +71,6 @@ __global__ void render_init(int max_x, int max_y, curandState *rand_state) {
 }
 
 __global__ void render(vec3 *fb, int max_x, int max_y, int ns, camera **cam, hitable **world, int max_depth, curandState *rand_state) {
-    
-    // std::cout<<ns<<std::endl;
 
     int i = threadIdx.x + blockIdx.x * blockDim.x;
     int j = threadIdx.y + blockIdx.y * blockDim.y;
@@ -211,7 +207,6 @@ float render_cuda(py::array_t<float> vec, const py::dict& config)
     checkCudaErrors(cudaMalloc((void **)&d_rand_state2, 1*sizeof(curandState)));
 
     rand_init<<<1, 1>>>(d_rand_state2);
-    checkCudaErrors(cudaGetLastError());
     checkCudaErrors(cudaDeviceSynchronize());
 
     hitable **d_list;
@@ -222,32 +217,30 @@ float render_cuda(py::array_t<float> vec, const py::dict& config)
     camera **d_camera;
     checkCudaErrors(cudaMalloc((void**)&d_camera, sizeof(camera *)));
     create_world<<<1,1>>>(buffer, d_list,d_world, width, height, d_rand_state2);
-    checkCudaErrors(cudaGetLastError());
+    
     checkCudaErrors(cudaDeviceSynchronize());
 
     create_camera<<<1,1>>>(lookfrom_ptr[0], lookfrom_ptr[1],lookfrom_ptr[2],
                            lookat_ptr[0], lookat_ptr[1], lookat_ptr[2],
                            up_ptr[0], up_ptr[1], up_ptr[2],
                            aperture, width, height, d_camera);
-    checkCudaErrors(cudaGetLastError());
+    
     checkCudaErrors(cudaDeviceSynchronize());
-
     clock_t start, stop;
     start = clock();
-    // Render our buffer
+
     dim3 blocks(width/tx+1,height/ty+1);
     dim3 threads(tx,ty);
     render_init<<<blocks, threads>>>(width, height, d_rand_state);
-    checkCudaErrors(cudaGetLastError());
+    
     checkCudaErrors(cudaDeviceSynchronize());
-
     render<<<blocks, threads>>>(fb, width, height, ns, d_camera, d_world, max_depth, d_rand_state);
-    checkCudaErrors(cudaGetLastError());
+    
     checkCudaErrors(cudaDeviceSynchronize());
     stop = clock();
     float duration = ((float)(stop - start)) / CLOCKS_PER_SEC;
 
-    // Output FB as Image
+
     for (int j = 0; j < height; j++) {
         for (int i = 0; i < width; i++) {
             size_t pixel_index = j*width + i;
@@ -261,7 +254,6 @@ float render_cuda(py::array_t<float> vec, const py::dict& config)
     checkCudaErrors(cudaDeviceSynchronize());
     free_world<<<1,1>>>(d_list, d_world);
     free_camera<<<1,1>>>(d_camera);
-    checkCudaErrors(cudaGetLastError());
     checkCudaErrors(cudaFree(d_list));
     checkCudaErrors(cudaFree(d_world));
     checkCudaErrors(cudaFree(fb));
