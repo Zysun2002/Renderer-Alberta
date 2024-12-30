@@ -42,7 +42,6 @@ and put 3D assets in this folder.
    
 4. assign rendering parameter and do the rasterization.
 ```
-cd integration
 python render.py  --obj_path OBJ_PATH --mtl_path MTL_PATH --camera_position CAMERA_COORDINATES --lookat CENTER_COORDINATES --up_direction UP_DIRECTION --light_direction LIGHT_DIRECTION
 ```
 
